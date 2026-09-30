@@ -15,7 +15,7 @@ ABC Technologies Pvt Ltd (Hyderabad) – 80 users across 4 departments (HR, Fina
 - NOC Troubleshooting Methodology
 
 ## 4. Network Topology
-![Topology Diagram](topology-diagram.jpg)
+![Topology Diagram](topology/topology-diagram.jpg)
 
 **Devices:**
 - 1 × Cisco 2911 Router

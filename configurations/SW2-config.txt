@@ -1,10 +1,10 @@
 !
-! SW1 Configuration - Cisco 2960
+! SW2 Configuration - Cisco 2960
 ! Project: Cisco LAN Switching & Inter-VLAN Routing - ABC Technologies
-! Hostname: SW1
+! Hostname: SW2
 !
 
-hostname SW1
+hostname SW2
 !
 vlan 10
  name HR
@@ -20,21 +20,16 @@ vlan 40
 !
 interface range FastEthernet0/1 - 2
  switchport mode access
- switchport access vlan 10
+ switchport access vlan 30
  spanning-tree portfast
 !
 interface range FastEthernet0/3 - 4
  switchport mode access
- switchport access vlan 20
+ switchport access vlan 40
  spanning-tree portfast
 !
 interface GigabitEthernet0/1
- description Trunk to SW2
- switchport mode trunk
- switchport trunk allowed vlan 10,20,30,40
-!
-interface GigabitEthernet0/2
- description Trunk to R1 (Router-on-a-Stick)
+ description Trunk to SW1
  switchport mode trunk
  switchport trunk allowed vlan 10,20,30,40
 !
